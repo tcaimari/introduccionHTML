@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablas</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <h1>Tablas en html</h1>
     <section>
         <h2>Ejemplo basico</h2>
-        <table border="1">
+        <table  >
             <thead>
                 <tr>
                     <th>Nombre</th>
@@ -31,7 +32,7 @@
             </tbody>
         </table>
         <h2>Colspan y rowspan</h2>
-        <table border="1"> 
+        <table> 
             <tr>
                 <th rowspan="2">Producto</th>
                 <th colespan="2">Precio</th>
@@ -47,7 +48,7 @@
             </tr>
         </table>
         <h2>Horario</h2>
-        <table border="1">
+        <table>
             <tr>
                 <th>&nbsp;</th>
                 <th>Lunes</th>
@@ -57,28 +58,45 @@
                 <th>Viernes</th>
             </tr>
             <tr>
-                <td>15:00-15:55</td>
+                <td class="hora">15:00-15:55</td>
+                <td rowspan="2" class="Ofimatica">Ofimatica</td>
+                <td rowspan="2" class="Ofimatica">Ofimatica</td>
+                <td rowspan="2" class="Sistemes">Sistemes</td>
+                <td class="Angles">Angles</td>
+                <td rowspan="2" class="Xarxes">Xarxes</td>
             </tr>
             <tr>
-                <td>15:00-15:55</td>
+                <td class="hora">15:55-16:50</td>
+                <td rowspan="2" class="Xarxes">Xarxes</td>
             </tr>
             <tr>
-                <td>15:55-16:50</td>
+                <td class="hora">16:50-17:45</td>
+                <td class="Angles">Angles</td>
+                <td class="Sistemes">Sistemes</td>
+                <td class="Muntage">Mutage</td>
+                <td class="digi">Digitalitzacio</td>
             </tr>
             <tr>
-                <td>16:50-17:45</td>
+                <td class="hora">17:45-18:15</td>
+                <td colspan="5" class="pati">Pati</td>
             </tr>
             <tr>
-                <td>17:45-18:15</td>
+                <td class="hora">18:15-19:10</td>
+                <td class="Angles">Angles</td>
+                <td class="Sistemes">Sistemes</td>
+                <td class="Muntage">Muntage</td>
+                <td class="Sistemes">Sistemes</td>
+                <td rowspan="3" class="ipo">Ipo</td>
             </tr>
             <tr>
-                <td>18:15-19:10</td>
+                <td class="hora">19:10-20:05</td>
+                <td rowspan="2" class="Muntage">Muntage</td>
+                <td rowspan="2" class="Muntage">Muntage</td>
+                <td rowspan="2" class="Xarxes">Xarxes</td>
+                <td rowspan="2" class="Ofimatica">Ofimatica</td>
             </tr>
             <tr>
-                <td>19:10-20:05</td>
-            </tr>
-            <tr>
-                <td>20:05-21:00 </td>
+                <td class="hora">20:05-21:00 </td>
             </tr>
         </table>
     </section>
